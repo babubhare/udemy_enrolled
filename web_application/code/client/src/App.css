@@ -1,0 +1,141 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+}
+
+.app-header {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.app-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.app-main {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.request-form {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.url-section {
+  margin-bottom: 2rem;
+}
+
+.url-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.url-section input,
+.url-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  font-family: 'Courier New', monospace;
+  resize: vertical;
+}
+
+.url-section input:focus,
+.url-section textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.cookie-section {
+  margin-top: 2rem;
+}
+
+.cookie-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.cookie-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.cookie-section textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #c33;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-header p {
+    font-size: 1rem;
+  }
+
+  .request-form {
+    padding: 1.5rem;
+  }
+}

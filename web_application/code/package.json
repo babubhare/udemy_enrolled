@@ -1,0 +1,22 @@
+{
+  "name": "http-request-tool",
+  "version": "1.0.0",
+  "description": "Node.js app for making HTTP requests with custom headers",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace server dev\" \"yarn workspace client dev\"",
+    "build": "yarn workspace client build",
+    "start": "yarn workspace server start"
+  },
+  "volta": {
+    "node": "22.12.0",
+    "yarn": "1.22.22"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
