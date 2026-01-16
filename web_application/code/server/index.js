@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const HOST = process.env.HOST || 'localhost';
 
 app.use(cors());
 app.use(express.json());
@@ -78,6 +79,6 @@ app.post('/api/request', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(PORT, HOST,  () => {
+  console.log(`Server running on port ${HOST + '//' + PORT}`);
 });
